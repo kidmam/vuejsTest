@@ -14,7 +14,7 @@
 <div id="example" class="container layout1">
     <p><input type="text" v-model="amount" class="form-control" /></p>
     <p>
-        <button id="deposit" @click="balance += parseInt(amount)"
+        <button id="deposit" v-on:click="balance += parseInt(amount)"
           class="btn btn-primary">예금</button>
         <button id="withdraw" @click="balance -= parseInt(amount)" 
           class="btn btn-primary">인출</button>
